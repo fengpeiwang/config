@@ -1,25 +1,12 @@
-properties
+常用的配置文件有：
+  properties、josn、yaml、hocon
 
-josn
+配置文件可以轻松支持比较复杂的配置，除了properties 和 json 在复杂的配置文件下，可选择YAML或HOCON
+  YAML:
+    适用场景：多层级关系，数组，可定义常量(包括：整数，浮点数，字符串，NULL，日期，布尔，时间)
+  HOCON:
+    HOCON(Human-Optimized Config Object Notation)是一个易于使用的配置文件格式。它被用于 Sponge 以及利用 Sponge API 的独立插件以储存重要的数据，比如配置或者玩家数据。HOCON 文件通常以 .conf 作为后缀名。
 
-yaml
-
-hocon
-
-轻松支持比较复杂的配置
-
-除了properties 和 json 在复杂的配置文件下，可选择YAML或HOCON
-
-YAML:
-
-适用场景：多层级关系，数组，可定义常量(包括：整数，浮点数，字符串，NULL，日期，布尔，时间)
-
-HOCON:
-
-HOCON(Human-Optimized Config Object Notation)是一个易于使用的配置文件格式。它被用于 Sponge 以及利用 Sponge API 的独立插件以储存重要的数据，比如配置或者玩家数据。HOCON 文件通常以 .conf 作为后缀名。
-
-读取支持
-
-Typesafe的Config库，纯Java写成、零外部依赖、代码精简、功能灵活、API友好。支持Java properties、JSON、JSON超集格式HOCON以及环境变量。它也是Akka的配置管理库。
-
-org.yaml.snakeyaml 支持读取 yaml文件
+读取支持配置文件的插件
+  Typesafe的Config库，纯Java写成、零外部依赖、代码精简、功能灵活、API友好。支持Java properties、JSON、JSON超集格式HOCON以及环境变量。它也是Akka的配置管理库。
+  org.yaml.snakeyaml 支持读取 yaml文件
